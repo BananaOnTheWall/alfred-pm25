@@ -37,6 +37,6 @@ if info_list:
     elif pm > 300:
         air = "严重污染，活不下去"
 
-    print '''<?xml version="1.0"?><items><item arg="%s" valid="yes" ><title>Geo Info</title><subtitle>PM2.5 at %s is %s. 空气质量：%s</subtitle><icon>pm.png</icon></item></items>''' % (citypinyin, cityname, pm, air)
+    print '''<?xml version="1.0"?><items><item arg="%s" valid="yes" ><title>PM 2.5 Info</title><subtitle>PM2.5 at %s is %s. 空气质量：%s</subtitle><icon>pm.png</icon></item></items>''' % (citypinyin, cityname, pm, air)
 else:
-    print '''<?xml version="1.0"?><items><item valid="yes" ><title>Geo Info</title><subtitle>The city name is invalid or there is no PM2.5 info for it.</subtitle><icon>pm.png</icon></item></items>'''
+    print '''<?xml version="1.0"?><items><item valid="yes" ><title>PM 2.5 Info</title><subtitle>The city name is invalid or there is no PM2.5 info for it.</subtitle><icon>pm.png</icon></item></items>'''
